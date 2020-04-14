@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>home</title>
+	<!--style css-->
+	<link rel="stylesheet" type="text/css" href="../css/fontstyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/mianpicstyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/menustyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/footstyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/loadmorestyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/boottrap-menu-style.css">
+	
+	<!--使用viewport元标签控制布局-->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!--在线icon-->
+	<link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<!--Google字体-->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto+Mono:400,700i|ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+	<!--滚动图片导入外接-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="UTF-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" charset="UTF-8"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	
+</head>
+
+<body class="home">
+	<!--导航栏-->
+<div class="menu">
+		<nav><!--导航链接-->
+			<!--<img class="logo" src="img/logodemo.png" alt=""/>logo图片-->
+			<a href="index.html"><img class="logo" src="../img/logo.png" alt=""></a>
+			
+			<label for="btn" class="icon">
+				<span class="fa fa-bars"></span>
+			</label>
+			<input class="box" type="checkbox" id="btn">
+			
+			<ul class="menu-list">
+				<li><a class="word" href="index.html">HOME</a></li>
+				<!--<li><a href="#">ABOUT</a></li>-->
+				
+				<!--PORTFOLIO-->
+				<li>
+					<lable for="btn-1" class="show show1">PORTFOLIO <i class="fas fa-caret-down"></i></lable>
+					<a class="word" href="portfoglio.html">PORTFOLIO <i class="fas fa-caret-down"></i>
+					</a>
+					<input class="box" type="checkbox" id="btn-1">
+					
+					
+					<ul>
+						<!--DATA-->
+						<li>
+							<lable for="btn-2" class="show">DATA <i style="transform: rotate(-90deg)" class="fas fa-caret-down"></i></lable>
+							<a class="word" href="#">DATA <i style="transform: rotate(-90deg)" class="fas fa-caret-down"></i></a>
+							<input class="box" type="checkbox" id="btn-2">
+							<ul>
+								
+								<li>
+									<lable for="btn-3" class="show">ALEX</lable>
+									<a class="word" href="alex.html">ALEX</a>
+									<input class="box" type="checkbox" id="btn-3">
+								</li>
+								<li>
+									<lable for="btn-4" class="show">DRONE</lable>
+									<a class="word" href="drone.html">DRONE</a>
+									<input class="box" type="checkbox" id="btn-4">
+								</li>
+							</ul>
+						</li>
+						<li>
+							<lable for="btn-5" class="show">APP DESIGN <i style="transform: rotate(-90deg)" class="fas fa-caret-down"></i></lable>
+							<a class="word" href="#">APP DESIGN <i style="transform: rotate(-90deg)" class="fas fa-caret-down"></i></a>
+							<input class="box" type="checkbox" id="btn-5">
+							<ul>
+								<li>
+									<lable for="btn-6" class="show">ECONOMY</lable>
+									<a class="word" href="economy.html">ECONOMY</a>
+									<input class="box" type="checkbox" id="btn-6">
+								</li>
+								<li>
+									<lable for="btn-7" class="show">YONGBAO</lable>
+									<a class="word" href="YONGBAO.html">YONGBAO</a>
+									<input class="box" type="checkbox" id="btn-7">
+								</li>
+							</ul>
+						</li>
+						<li><a class="word" href="before.html">WEB DESIGN </a></li>
+						<li>
+							<lable for="btn-8" class="show">GAME <i style="transform: rotate(-90deg)" class="fas fa-caret-down"></i></lable>
+							<a class="word" href="#">GAME <i style="transform: rotate(-90deg)" class="fas fa-caret-down"></i></a>
+							<input class="box" type="checkbox" id="btn-8">
+							<ul>
+								<li>
+									<lable for="btn-9" class="show">VIDEO GAME</lable>
+									<a class="word" href="before.html">VIDEO GAME</a>
+									<input class="box" type="checkbox" id="btn-9">
+								</li>
+								<li>
+									<lable for="btn-10" class="show">INFINITE</lable>
+									<a class="word" href="INFINITE.html">INFINITE</a>
+									<input class="box" type="checkbox" id="btn-10">
+								</li>
+							</ul>
+						</li>
+						<li><a class="word" href="MUJI.html">SERVICE</a></li>
+						<li><a class="word" href="hun.html">VIDEO</a></li>
+						<li><a class="word" href="../html/photograph.html">PHOTOGRAPHY</a></li>
+					</ul>
+				</li>
+				
+				<li><a class="word" href="aboutpage.html">RESUME</a></li>
+				<!--<li><a href="#">CONTACT</a></li>-->
+			</ul>
+		</nav>
+	</div>
+	<!--标题-->
+<div class="headword">
+  <h1>My Recent Works</h1>
+</div>
+	<!--滚动图片-->
+<div class="blogs owl-carousel">
+	<div class="blog">
+		<img src="../img/game1.png" alt="">
+		<div class="blog-description">
+			<div class="categorie">Game Design</div>
+			<h2 class="title">Before you fly</h2>
+			<div class="date">January 2020</div>
+			<a href="before.html" class="more">See More</a>
+		</div>
+	</div>
+	<!--
+	<div class="blog">
+		<img src="../img/game2.png" alt="">
+		<div class="blog-description">
+			<div class="categorie">Game Design</div>
+			<h2 class="title">Before you fly</h2>
+			<div class="date">JAN 13 2020</div>
+			<a href="#" class="more">See More</a>
+		</div>
+	</div>-->
+	<!--<div class="blog">
+		<img src="../img/data1.png" alt="">
+		<div class="blog-description">
+			<div class="categorie">Game Design</div>
+			<h2 class="title">Before you fly</h2>
+			<div class="date">JAN 13 2020</div>
+			<a href="#" class="more">See More</a>
+		</div>
+	</div>-->
+	<div class="blog">
+		<img src="../img/data2.png" alt="">
+		<div class="blog-description">
+			<div class="categorie">Data</div>
+			<h2 class="title">Drone</h2>
+			<div class="date">November 2019</div>
+			<a href="drone.html" class="more">See More</a>
+		</div>
+	</div>
+	<!--<div class="blog">
+		<img src="../img/app1.png" alt="">
+		<div class="blog-description">
+			<div class="categorie">Game Design</div>
+			<h2 class="title">Before you fly</h2>
+			<div class="date">JAN 13 2020</div>
+			<a href="#" class="more">See More</a>
+		</div>
+	</div>-->
+	<div class="blog">
+		<img src="../img/app2.png" alt="">
+		<div class="blog-description">
+			<div class="categorie">App Design</div>
+			<h2 class="title">Yong Bao</h2>
+			<div class="date">June 2018</div>
+			<a href="YONGBAO.html" class="more">See More</a>
+		</div>
+	</div>
+	<div class="blog">
+		<img src="../img/system.png" alt="">
+		<div class="blog-description">
+			<div class="categorie">Service</div>
+			<h2 class="title">MUJI</h2>
+			<div class="date">November 2018</div>
+			<a href="MUJI.html" class="more">See More</a>
+		</div>
+	</div>
+</div>
+	<!--.owl-carousel 是设置的 .blogs-->
+	
+<script type="text/javascript">
+
+    $(".owl-carousel").owlCarousel({
+      items :2,
+      margin: 20,
+      loop: true,
+      autoplay: true,
+      smartSpeed: 1500,
+      dots: true,/*为什么不显示*/
+      center:true,
+      
+    });
+  
+
+</script>	
+	<!--see more bottom
+<div class="seebottom">
+	<p><a  href="#" role="button">LOAD MORE</a></p>
+</div>
+-->
+
+	
+	<!--剩下的作品-->
+	<div id="load-works">
+	<div class="work">
+		<img src="../img/game1.png" alt="">
+		<div class="work-description">
+			<div class="work-type">Game Design/Web Design</div>
+			<h2 class="work-title">Before you fly</h2>
+			<p class="work-des">Help the users to become aware the basic regulations of drone flying.By using interactive videos to stimulate the experience of flying a drone.</p>
+			<a href="before.html" class="pic-link">See More</a>
+		</div>
+	</div>
+  <div class="work">
+	  <img src="../img/system.png" alt="">
+		<div class="work-description">
+			<div class="work-type">Service</div>
+			<h2 class="work-title">MUJI</h2>
+			<p class="work-des">MUJI doesn’t overemphasis its brand, but focus on the quality and value of products and design. </p>
+			<a href="MUJI.html" class="pic-link">See More</a>
+		</div>
+	</div>
+  <div class="work">
+	  <img src="../img/data1.png" alt="">
+		<div class="work-description">
+			<div class="work-type">Data</div>
+			<h2 class="work-title">Alex</h2>
+			<p class="work-des">Websites as digital platforms, has revolutionized our ways of communication, living, and information consumption.</p>
+			<a href="alex.html" class="pic-link">See More</a>
+		</div>
+	</div>
+  <div class="work">
+	  <img src="../img/data2.png" alt="">
+		<div class="work-description">
+			<div class="work-type">Data</div>
+			<h2 class="work-title">Drone</h2>
+			<p class="work-des">Through our initial research for the project, one of the common themes we noticed is the number of concerns involving the drone’s impact on personal privacy.</p>
+			<a href="drone.html" class="pic-link">See More</a>
+		</div>
+	</div>
+  <div class="work">
+	  <img src="../img/app2.png" alt="">
+		<div class="work-description">
+			<div class="work-type">App Design</div>
+			<h2 class="work-title">Yong Bao</h2>
+			<p class="work-des">That guarantees the establishment of a good relation.For grandparents and grandchildren living away from each other.</p>
+			<a href="YONGBAO.html" class="pic-link">See More</a>
+		</div>
+	</div>
+  <div class="work">
+	  <img src="../img/app1.png" alt="">
+		<div class="work-description">
+			<div class="work-type">App Design</div>
+			<h2 class="work-title">Economy</h2>
+			<p class="work-des">Health app that records the life condition of users, such as the situation of drink water, diet, exercise, and sleep.</p>
+			<a href="economy.html" class="pic-link">See More</a>
+		</div>
+	</div>
+	<div class="work">
+	  <img src="../img/video.png" alt="">
+		<div class="work-description">
+			<div class="work-type">Video</div>
+			<h2 class="work-title">100 Years Of Solitude</h2>
+			<p class="work-des">One Hundred Years of Solitude is a landmark 1967 novel by Colombian author Gabriel García Márquez.</p>
+			<a href="hun.html" class="pic-link">See More</a>
+		</div>
+	</div>
+  <div class="work">
+	  <img src="../img/game2.png" alt="">
+		<div class="work-description">
+			<div class="work-type">Game Design</div>
+			<h2 class="work-title">Infinite</h2>
+			<p class="work-des">Athanasy Infinite is set in the future where video games have become as important as real life.</p>
+			<a href="INFINITE.html" class="pic-link">See More</a>
+		</div>
+	</div>
+  <div class="work">
+	  <img src="../img/14.jpg" alt="">
+		<div class="work-description">
+			<div class="work-type">Photograph</div>
+			<h2 class="work-title">Photo</h2>
+			<p class="work-des">Some pictures I took while traveling.</p>
+			<a href="photograph.html" class="pic-link">See More</a>
+		</div>
+	</div>
+	
+</div>
+	<!--点击显示 -->
+<div class="seebottom">
+	<p><a id="seemore" href="#" role="button">Load More</a><!--see bottom-->
+		<a id="hidemore" href="#" role="button">Hide More</a><!--hide bottom-->
+	</p>
+</div>
+	<!--导入jquery 实现hidden和show-->
+	
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script>
+	
+	<script>
+		$(document).ready(function(){
+			$('#load-works').hide();
+		});
+		$(document).ready(function(){
+			$("#hidemore").click(function(){
+			$('#load-works').hide();
+			  });
+			$("#seemore").click(function(){
+			$('#load-works').show();
+			  });
+		});
+
+	</script>
+	
+	
+	<!--back to top bottom -->
+<div class="gotopbtn">
+	<a  href="#"><i class="fas fa-caret-up"></i></a>
+</div>
+	<!--foot 页尾-->
+<div class="footer">
+	<div class="foot">
+		<div class="foot-description">
+			<p class="foot-description-word"><b>CONTACT ME:</b> Phone: +86 15720626605 / +39 3475915347 Email: 2471499782@qq.com / zhangxuanelf@gmail.com</p>
+		</div>
+	</div>
+</div>
+	
+</body>
+</html>

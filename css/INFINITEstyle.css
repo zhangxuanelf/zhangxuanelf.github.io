@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto+Mono:400,700i|ZCOOL+QingKe+HuangYou&display=swap');
+.infinite{
+	background: #EFF0F2;
+}
+
+.infinitegif{
+	width: 100%;
+}
+.infinite1{
+	width: 100%;
+}
+.infinite2{
+	width: 100%;
+	margin-bottom: 60px;
+}
+
+.playbuttom{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 4890px;
+}
+.playbuttomcn{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 4620px;
+}
+.playgame{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'RobotoMono-Bold',sans-serif;
+	background: #fff;
+	padding: 10px 20px;
+	color:#2C2825;
+	border-radius: 25px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+
+}	
+
+.playgame:hover{
+	background-color: #5067EB;
+	color: #fff;
+}

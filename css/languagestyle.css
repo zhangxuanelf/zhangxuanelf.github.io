@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto+Mono:400,700i|ZCOOL+QingKe+HuangYou&display=swap');
+.about{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	outline: none;
+	font-family:'RobotoMono-Bold',sans-serif;
+}
+.checkword{
+	position: relative;
+	width: 50px;
+	-webkit-appearance:none;/*checkbox图标消失*/
+
+}
+
+
+.en{
+	
+	color: #2C2825;
+	font-size:15px;
+	font-family:'RobotoMono-Regular',sans-serif;
+	
+}
+
+.cn{
+position: absolute;
+	left:60px;
+	font-size:15px;
+	font-family:'RobotoMono-Regular',sans-serif;
+	
+}
+.checkword{
+	position: absolute;
+	left:25px;
+}
+
+.content.contentEnglish,.content.contentChina{
+	margin-top: 10px;
+}
+.content.contentEnglish{
+	font-family:'RobotoMono-Regular',sans-serif;
+	font-size:18px;
+}
+.content.contentChina{
+	font-family: 'ZCOOLQingKeHuangYou-Regular',sans-serif;
+	font-size:20px;
+}
+
+.about-description .content{
+	display: none;
+}
+.about-description .content.contentEnglish{
+	display: block;
+}
+
+
+
+
+/*设置点击前的盒子*/
+.checkword:before{
+	content: '';
+	position: absolute;
+	top:5px;
+	width: 30px;
+	height: 15px;
+	background-color: #333;
+	border-radius: 25px;
+}		
+.checkword:checked:before{
+	background:#5067EB;}
+
+
+
+/*设置点击以后的盒子*/
+.checkword:after{
+  content: '';
+  position:absolute;
+  left:0;
+	top:5px;
+  width: 15px;
+  height:15px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid #908888;/*圆*/
+  box-sizing: border-box;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);/*阴影*/
+	}
+
+
+/*设置盒子隐藏和出现*/
+.checkword:checked:after{
+    left:15px;
+    border: 2px solid #00a1ff;
+}
+.checkword:checked~.content.contentEnglish{
+    display: none;
+}
+.checkword:checked~.content.contentChina{
+    display: block;
+}

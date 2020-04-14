@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway:400,700|Roboto+Mono:400,500,700&display=swap');
+header{
+	background-image: url("../img/bjlight_画板 1.png");/*渐变 linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),*/
+	height: 100vh;/*vh是啥意思*/
+	-webkit-background-size:cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.banner-text{
+	/*居中对齐的方式*/
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	color:#2C2825;
+}
+/*menu白背景*/
+
+	.navbar-light{
+	background-color:#fff;
+	opacity: 0.8;
+	box-shadow: 1px 2px 3px 2px rgba(0,0,0,0.2);
+	}
+
+/*改文字字体*/
+.navbar-brand{
+	font-family: 'Raleway',sans-serif;
+
+}
+
+.nav-link{
+	font-family: 'Quicksand',sans-serif;
+	
+}
+.small-des{
+	font-family: 'RobotoMono-Medium',sans-serif;
+}
+.banner-btn a{
+	border: 1px solid #fff;
+	border-radius: 50px;
+	text-transform: uppercase;/*全大写*/
+	text-decoration: none;
+	padding: 10px 50px;
+	display: inline-block;
+	margin-top: 15px;
+	background-color: #fff;
+	box-shadow: 1px 4px 3px 2px rgba(0,0,0,0.4);
+}
+.banner-btn a.active{
+	background: #5067EB;
+	border-color: #5067EB;
+	color: #fff;
+}
+
+/*responsive css 自适应*/
+
+@media (max-width:992px){
+.navbar-light{
+	background-color:#EFF0F2;
+	box-shadow: 1px 2px 3px 2px rgba(0,0,0,0.2);
+}
+
+
+}
+@media (max-width:500px){
+	.banner-text p{
+		display: none;
+	}
+	.navbar-light{
+		background-color:#EFF0F2;
+		box-shadow: 1px 2px 3px 2px rgba(0,0,0,0.2);
+	}
+	.text-aera{
+		font-size:40px;
+	}
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto+Mono:400,700i|ZCOOL+QingKe+HuangYou&display=swap');
+/* CSS Document */
+
+.yongbao{
+	background: #EFF0F2;
+}
+.yongbao1{
+	width: 100%;
+	margin-top: 53px;
+}
+.baofunction{
+	width: 70%;
+	position:relative;
+	left:50%;
+	transform: translate(-50%);
+}
+.yongbao2{
+	width: 100%;
+}
+.baoscenario{
+	width: 70%;
+	position:relative;
+	left:50%;
+	transform: translate(-50%);
+	margin-bottom: 50px;
+}

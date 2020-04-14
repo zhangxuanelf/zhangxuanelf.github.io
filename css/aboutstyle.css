@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto+Mono:400,700i|ZCOOL+QingKe+HuangYou&display=swap');
+
+.about-home{
+	background: #EFF0F2;
+
+}
+
+.about{
+	height:100px;
+
+}
+.about img{
+	position: absolute;
+	right:200px;
+	top:215px;
+	width: 660px;
+	z-index: 5;
+}
+.about-description{
+	position: absolute;
+	left:200px;
+	top:131px;
+	background: #fff;
+	height: 600px;
+	width: 600px;
+	box-sizing: border-box;/*改为左右对齐*/
+
+}
+.about-description-word{
+	margin-top: 170px;
+	margin-left: 30px;
+	position: absolute;
+	z-index: 6;	
+}
+
+.bigtitle{
+	margin-bottom: 65px;
+	font-size: 45px;
+	font-family: 'RobotoMono-Bold',sans-serif;
+}
+.contentcn{
+	line-height: 30px;
+}

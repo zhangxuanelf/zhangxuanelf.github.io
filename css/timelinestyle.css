@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto+Mono:400,700i|ZCOOL+QingKe+HuangYou&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.timeline{
+	position: relative;
+	left:50%;
+	transform: translate(-50%);
+	margin-top: 890px;
+	margin-bottom: 60px;
+	width: 1000px;
+	height: 100%;
+	/*改为左右对齐 box-sizing:border-box;*/
+}
+/*设置竖线*/
+.timeline:before{
+	content: '';
+	position: absolute;
+	left: 50%;
+	width: 2px;
+	height: 100%;
+	background: #c5c5c5;
+}
+.timeline ul{
+	margin: 0;
+	padding: 0;
+}
+.timeline ul li{
+	list-style: none;
+	position: relative;
+	width: 50%;
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+
+/*分布*/
+.timeline ul li:nth-child(odd){
+	float: left;
+	text-align: right;/*设置文字向右*/
+	clear:both;/*元素被向下移动用于清除之前的左右浮动*/
+}
+.timeline ul li:nth-child(even){
+	float: right;
+	text-align: left;/*设置文字向左*/
+	clear:both;/*元素被向下移动用于清除之前的左右浮动*/
+}
+
+.timeline-content{
+	padding-bottom:20px;
+}
+
+.timeline ul li:nth-child(odd):before{
+	content: '';
+	position: absolute;
+	top:24px;
+	right: -6px;/*贴到线上*/
+	width: 10px;
+	height: 10px;
+	background: rgba(80,103,235,100);
+	border-radius: 50%;/*圆*/
+	box-shadow: 0 0 0 3px rgba(80,103,235,0.2);
+	
+}
+
+.timeline ul li:nth-child(even):before{
+	content: '';
+	position: absolute;
+	top:24px;
+	left: -4px;/*贴到线上*/
+	width: 10px;
+	height: 10px;
+	background: rgba(80,103,235,100);
+	border-radius: 50%;/*圆*/
+	box-shadow: 0 0 0 3px rgba(80,103,235,0.3);
+}
+
+.storytype{
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	color: rgba(80,103,235,1);
+}
+
+
+/*设置时间轴图标*/
+.timeline ul li:nth-child(odd) .story-time{
+	position: absolute;
+	top:12px;
+	right:-185px;
+	margin: 0;
+	padding: 8px 16px;
+	background: rgba(80,103,235,1);
+	color:#fff;
+	border-radius: 18px;
+	box-shadow: 0 0 0 3px rgba(80,103,235,0.3);
+}
+
+.timeline ul li:nth-child(even) .story-time{
+	position: absolute;
+	top:12px;
+	left:-180px;
+	margin: 0;
+	padding: 8px 16px;
+	background: rgba(80,103,235,1);
+	color:#fff;
+	border-radius: 18px;
+	box-shadow: 0 0 0 3px rgba(80,103,235,0.3);
+}
+
+/*改翻译*/
+.timeline .contentline{
+	display: none;
+}
+
+.timeline .contentline.contentEnglish-line{
+	display: block;
+}
+.checkone{
+	margin: 0;
+	padding: 0;
+}
+
+.checkone{
+	position: relative;
+	width: 30px;
+	-webkit-appearance:none;/*checkbox图标消失*/
+
+}
+.checktwo{
+	margin: 0;
+	padding: 0;
+}
+
+.checktwo{
+	position: relative;
+	width: 30px;
+	-webkit-appearance:none;/*checkbox图标消失*/
+
+}
+
+/*设置点击前的盒子*/
+.checkone:before{
+	content: '';
+	position: absolute;
+	top:-15px;
+	background-color: #707070;
+	height: 15px;
+	width: 30px;
+	border-radius: 25px;
+}
+.checkone:checked:before{
+	background:#5067EB;
+}
+
+/*设置点击以后的盒子*/
+.checkone:after{
+  content: '';
+  position: absolute;
+top:-15px;
+  width: 15px;
+  height:15px;
+  background: #fff;
+  border: 1px solid #fff;/*圆*/
+  border-radius: 25px;
+  box-shadow: outset 0 0 5px rgba(0,0,0,0.5);/*阴影*/
+  box-sizing: border-box;
+  transition: 0.25s;
+}
+
+/*设置盒子隐藏和出现*/
+.checkone:checked:after{
+    right:0px;
+    border: 1px solid #00a1ff;
+}
+.checkone:checked~.contentline.contentEnglish-line{
+    display: none;
+}
+.checkone:checked~.contentline.contentChina-line{
+    display: block;
+}
+
+/*右边*/
+/*设置点击前的盒子*/
+.checktwo:before{
+	content: '';
+	position: absolute;
+	top:-15px;
+	background-color: #707070;
+	height: 15px;
+	width: 30px;
+	border-radius: 25px;
+}
+.checktwo:checked:before{
+	background:#5067EB;
+}
+
+/*设置点击以后的盒子*/
+.checktwo:after{
+  content: '';
+  position: absolute;
+	top:-15px;
+  width: 15px;
+  height:15px;
+  background: #fff;
+  border: 1px solid #fff;/*圆*/
+  border-radius: 25px;
+  box-shadow: outset 0 0 5px rgba(0,0,0,0.5);/*阴影*/
+  box-sizing: border-box;
+  transition: 0.25s;
+}
+
+/*设置盒子隐藏和出现*/
+.checktwo:checked:after{
+    left:15px;
+    border: 1px solid #00a1ff;
+}
+.checktwo:checked~.contentline.contentEnglish-line{
+    display: none;
+}
+.checktwo:checked~.contentline.contentChina-line{
+    display: block;
+}
+
+.timeline-title{
+	position: absolute;
+	top:900px;
+	left:550px;
+	font-family: 'RobotoMono-Bold',sans-serif;
+	font-size: 30px;
+	background: #fff;
+	padding: 10px 30px;
+	border-radius: 25px;
+	box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.3);
+	text-decoration: none;
+	font-color:#1A1613;
+}
+
+.storytype{
+	font-family: 'RobotoMono-Bold'sans-serif;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.storyline-text-en{
+	font-family: 'RobotoMono-Regular',sans-serif;
+	font-size: 16px;
+}
+.storyline-text-cn{
+	font-family: 'ZCOOLQingKeHuangYou-Regular',sans-serif;
+	font-size: 18px;
+	line-height: 25px;
+}
+

@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto+Mono:400,700i|ZCOOL+QingKe+HuangYou&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*导航栏位置设置*/
+.menu{
+	margin: 0 auto;
+}
+.word{
+	font-family: 'Quicksand',sans-serif;
+}
+
+/*导航栏*/
+.menu nav{
+	width: 100%;
+	position: fixed;/*固定在顶部*/
+	top:0;
+	z-index: 7;
+	background: #fff;
+	box-shadow: 0 10px 15px rgba(0,0,0,0.1);/*加阴影*/
+}
+.logo{
+	width: 50px;
+	margin-top:3px;
+	margin-left: 40px;
+}
+
+
+
+nav:after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+nav ul{
+	padding: 0;
+	margin: 0;
+	float:right;
+	margin-right: 40px;
+	position: relative;
+}
+
+nav ul li{
+	background: #fff;
+	position: relative;
+	list-style: none;/*去掉前面的点*/
+	display: inline-block;
+}
+
+nav ul li a{
+	display: block;/*变成块状就可以有上下关系了*/
+	padding:0 15px;
+	color:#1A1613;
+	text-decoration: none;/*去掉链接下划线*/
+	line-height:63px; /*行上下距*/
+	font-size: 16px;
+	font-family: 'Quicksand-Medium',sans-serif;
+	
+}
+
+nav ul li a:hover{
+	color: #5067EB;/*直接在字上加颜色*/
+	
+}
+
+nav ul ul{
+	position: absolute;/*位置相对移动*/
+	z-index: 8;/*设置层级，不让下级内容覆盖导航栏*/
+	top:63px;/*下级框到任务栏的距离*/
+	display: none;
+	
+	
+}
+
+nav ul li:hover > ul{
+	display: block;
+}
+
+nav ul ul li{
+	width: 162px;
+	float:none;
+	display: list-item;
+	position: relative;
+	margin: 0;
+	border-bottom: 1px solid ridge(0,0,0,0.3);
+}
+nav ul ul li a{
+	font-size: 16px;
+}
+
+/*第三菜单*/
+nav ul ul ul li{
+	position: relative;
+	top:-63px;
+	left:162px;
+}
+
+/*nav ul ul ul li a{
+	font-size: 16px;
+}*/
+
+/*nav ul ul ul li a{
+	font-size: 16px;
+}*/
+
+/*设置缩小状态*/
+.show,.box{
+	display: none;/*取消checkbox在大屏时点显示*/
+}
+/*隐藏汉堡图标*/
+.show,.icon,.box{
+	display: none;
+}
+
+/*自适应*/
+@media all and (max-width:968px){
+	
+nav ul{
+	float:left;
+	margin-right:0px;
+	}
+
+.logo{
+	display: none;
+	/*padding-left:40px;*/
+	
+}
+	
+nav ul li,nav ul ul li{
+		display: block;
+		width: 100%;
+	
+	}	
+	
+	
+nav ul ul{
+		top:63px;
+		position: static;
+		border-top: none;
+		float: none;
+		display: none;/*这里可能有问题*/
+		opacity: 1;
+		visibility: visible;
+	}
+	nav ul ul ul li{
+		position: static;
+	}
+	
+	.show{
+		
+		display: block;
+		color: black;
+		font-size:16px;
+		padding: 0 20px;
+		line-height:63px;
+		cursor: pointer;
+		font-family: 'Quicksand',sans-serif;
+	}
+	
+	
+	.show:hover{
+		color: #5067EB;
+	}
+	
+	.icon{
+		display: block;
+		color: #5067EB;
+		position: absolute;
+		right: 40px;
+		line-height: 63px;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	nav ul li a:hover{
+		box-shadow: none;
+		
+	}
+	.show + a,ul{
+		display: none;
+	}
+	
+	[id^=btn]:checked+ul{
+		display: block;
+	}
+}

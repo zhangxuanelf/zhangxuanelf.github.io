@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto+Mono:400,700i|ZCOOL+QingKe+HuangYou&display=swap');
+.alex{
+	background: #EFF0F2;
+}
+.alex1{
+	margin-top: 60px;
+	width: 100%;
+}
+.alexbutton{
+	margin-left: 46%;
+	margin-bottom: 50px;
+	
+}
+.alex-link{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'RobotoMono-Bold',sans-serif;
+	background: #fff;
+	padding: 10px 20px;
+	color:#2C2825;
+	border-radius: 25px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+.alex-link:hover{
+	background-color: #5067EB;
+	color: #fff;
+}

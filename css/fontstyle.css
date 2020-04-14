@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto+Mono:400,700i|ZCOOL+QingKe+HuangYou&display=swap');
+*{
+	margin: 0;
+	pading:0;
+}
+.headword{
+	width: 380px;
+	height: 85px;
+	
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	border-bottom: 3px solid #2C2825;
+	margin:151px auto ;/*水平居中*/
+}
+.headword h1{
+	font-family:'RobotoMono-Bold',sans-serif;
+
+	font-size: 36px;
+}
+/*更多作品链接跳转按钮*/
+.seebottom{
+	text-align: center;
+	margin-bottom: 100px;
+}
+.seebottom a{
+	
+	padding: 10px 50px;
+	border-radius: 50px;
+	box-shadow: 1px 4px 3px 2px rgba(0,0,0,0.4);
+	background: #fff;
+	font-family: 'RobotoMono-Bold',sans-serif;
+	font-size: 20px;
+	line-height: 60px;
+	position: relative;
+	left: 28px;
+	text-decoration: none;
+	color: #1A1613;
+}
+.seebottom a:hover{
+	background:#5067EB;
+	color: #fff;
+}
