@@ -25,3 +25,9 @@
 	transform: translate(-50%);
 	margin-bottom: 50px;
 }
+
+@media (max-width:992px){
+	.yongbao1{
+		margin-top: 0px;
+	}
+}
