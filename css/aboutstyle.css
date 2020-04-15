@@ -44,7 +44,11 @@
 	line-height: 30px;
 }
 
-@media (max-width:375px){
+@media (max-width:520px){
+	.about{
+	height:50px;
+
+}
 	.about img{
 	position: absolute;
 	right:100px;
@@ -64,7 +68,7 @@
 
 }
 	.about-description p{
-		font-size: 10px;
+		font-size: 15px;
 	}
 	.bigtitle{
 	margin-bottom: 20px;
@@ -72,6 +76,6 @@
 	font-family: 'RobotoMono-Bold',sans-serif;
 }
 .contentcn{
-	line-height: 15px;
+	line-height: 20px;
 }
 }
