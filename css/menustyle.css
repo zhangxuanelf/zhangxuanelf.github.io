@@ -157,7 +157,7 @@ nav ul ul{
 		display: block;
 		color: black;
 		font-size:16px;
-		padding: 0 20px;
+		padding: 0 15px;
 		line-height:63px;
 		cursor: pointer;
 		font-family: 'Quicksand',sans-serif;
@@ -187,5 +187,11 @@ nav ul ul{
 	
 	[id^=btn]:checked+ul{
 		display: block;
+	}
+	
+	.word1{
+		margin: 0;
+		padding: 0;
+		font-family: 'Quicksand',sans-serif;
 	}
 }
