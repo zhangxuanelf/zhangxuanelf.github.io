@@ -26,7 +26,7 @@
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
-	top: 4620px;
+	top: 536%;
 }
 .playgame{
 	text-decoration: none;
@@ -43,4 +43,13 @@
 .playgame:hover{
 	background-color: #5067EB;
 	color: #fff;
+}
+@media (max-width:968px){
+	.playbuttomcn{
+		position: absolute;
+		top:425%;
+	}
+	.playgame{
+		font-size:80%;
+	}
 }

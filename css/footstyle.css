@@ -51,12 +51,12 @@ html{
 .foot-description-word{
 	font-family:'Quicksand',sans-serif;
 }
-@media (max-width:992px){
+@media (max-width:968px){
 	.foot-description{
-		font-size: 50%;
+		font-size: 80%;
 	}
 	.footer{
-		height: 50%;
-		padding: 35px 0;
+		height: 60%;
+		padding: 45px 0;
 	}
 }
