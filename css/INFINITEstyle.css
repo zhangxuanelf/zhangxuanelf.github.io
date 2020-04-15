@@ -26,7 +26,7 @@
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
-	top: 536%;
+	top: 552%;
 }
 .playgame{
 	text-decoration: none;
@@ -47,9 +47,18 @@
 @media (max-width:968px){
 	.playbuttomcn{
 		position: absolute;
-		top:425%;
+		top:428%;
 	}
 	.playgame{
 		font-size:80%;
+	}
+}
+@media (max-width:375px){
+	.playbuttomcn{
+		position: absolute;
+		top:410%;
+	}
+	.playgame{
+		font-size:50%;
 	}
 }
