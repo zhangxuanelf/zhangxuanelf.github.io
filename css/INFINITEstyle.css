@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto+Mono:400,700i|ZCOOL+QingKe+HuangYou&display=swap');
 .infinite{
 	background: #EFF0F2;
+	position: relative;
 }
 
 .infinitegif{
@@ -26,7 +27,7 @@
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
-	top: 552%;
+	top: 4620px;
 }
 .playgame{
 	text-decoration: none;
@@ -47,7 +48,7 @@
 @media (max-width:968px){
 	.playbuttomcn{
 		position: absolute;
-		top:428%;
+		top:2700px;
 	}
 	.playgame{
 		font-size:80%;
