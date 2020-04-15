@@ -27,3 +27,11 @@
 	background-color: #5067EB;
 	color: #fff;
 }
+@media (max-width:968px){
+	.alex1{
+		margin-top: 0px;
+	}
+	.alex-link{
+		font-size: 16px;
+	}
+}
