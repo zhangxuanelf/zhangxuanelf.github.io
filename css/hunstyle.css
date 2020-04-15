@@ -13,8 +13,15 @@
 
 .video100{
 	width: 50%;
-	margin-left: 370px;
+	margin-left: 50%;
+	transform: translate(-50%);
 }
 .hundred{
 	margin-bottom: 50px;
+}
+
+@media (max-width:968px){
+	.huns{
+		margin-top: 0px;
+	}
 }
