@@ -57,3 +57,10 @@
 	background-color: #5067EB;
 	color:#fff;
 }
+
+/*自适应*/
+@media all and (max-width:968px){
+	.work{
+		width: 100px;
+	}
+}
