@@ -146,7 +146,7 @@
 @media all and (max-width:968px){
 	/*字和图片自适应*/
 	.headword{
-		width: 250px;
+		width: 500px;
 		margin: 90px auto;
 	}
 	.headword h1{
